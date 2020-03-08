@@ -8,11 +8,11 @@ mysql에 hibernate_sequence 테이블을 따로 관리 하여 자동키를 번�
 
 #### JPA @GeneratedValue 내부 구조
 
-![jpa](/Users/choitaehoon/Documents/jpa.jpg)
+![jpa](https://user-images.githubusercontent.com/33123391/76158533-12e26800-615a-11ea-8b14-c8e29886dd07.jpg)
 
 GenerationType에 TABLE, SEQUENCE, IDENTITY, AUTO의 타입으로 이루어져 있는데 이 종류 중에 default로 AUTO로 하고 있다. 그렇다면 AUTO 를 사용하는 경우 기본키 생성 전략을 어떻게 결정 할까?
 
-![auto](/Users/choitaehoon/Desktop/auto.png)
+<img width="878" alt="auto" src="https://user-images.githubusercontent.com/33123391/76158532-0d851d80-615a-11ea-9c89-04ae33baeb72.png">
 
 **이 그림은 popit.kr에서 발취한 자료입니다.**
 
@@ -40,7 +40,7 @@ GenerationType에 TABLE, SEQUENCE, IDENTITY, AUTO의 타입으로 이루어져 �
 
 #### #### Hibernate.id_new_generator_mappings
 
-![generator](/Users/choitaehoon/Desktop/generator.png)
+<img width="969" alt="generator" src="https://user-images.githubusercontent.com/33123391/76158530-09f19680-615a-11ea-931f-a99ad591045c.png">
 
 spring-boot 공식 문서에 기본적으로 true를 지원 한다. 일시적으로 복원해야 하는 경우 false로 설정하라는 문구가 존재한다
 
