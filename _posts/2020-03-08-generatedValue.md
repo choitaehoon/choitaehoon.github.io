@@ -1,6 +1,6 @@
 ---
 title: "JPA GeneratedValue 기본키 생성 전략"
-date: 2020-03-08 15:39:00 
+date: 2020-03-08 16:15:00 
 categories: JPA GeneratedValue AUTO
 ---
 
