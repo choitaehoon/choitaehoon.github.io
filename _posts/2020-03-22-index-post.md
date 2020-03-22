@@ -39,7 +39,7 @@ rows를 보면 거의 모든 행을 다 돌고 있습니다. 한 마디로 말�
 
 인덱스를 설정 하고 explain 결과
 
-![images2](/Users/choitaehoon/Desktop/images2.png)
+![images2](https://user-images.githubusercontent.com/33123391/77252699-02250c80-6c99-11ea-9e60-857dfe1db8d8.png)
 
 
 
