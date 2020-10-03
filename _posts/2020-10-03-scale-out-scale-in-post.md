@@ -45,3 +45,7 @@ Scale-out을 적용한 이유만 보면 무조건 Scale-out만 사용해야 한�
 1. 아키텍처에 대해 깊게 공부하고 적용합니다.
 2. 확장이 필요 하다면 충분히 고려 한 후에 적용합니다.
 3. 세션 스토리지를 구성하여 각각의 서버에 대한 세션을 복제해 데이터 정합성 이슈를 해결합니다. 
+
+참조 블로그
+* http://library.gabia.com/contents/infrahosting/1222
+* https://butter-shower.tistory.com/109
