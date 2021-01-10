@@ -1,6 +1,5 @@
 ---
-title: 인스타그램과 같은 SNS 플랫폼은 환경 설정들을 어떻게 관리해야할까? - 
-(Spring Cloud Config vs Spring Cloud Netflix vs Spring Cloud Consul)
+title: 인스타그램과 같은 SNS 플랫폼은 환경 설정들을 어떻게 관리해야할까? - (Spring Cloud Config vs Spring Cloud Netflix vs Spring Cloud Consul)
 date: 2021-01-09 14:03:00
 ---
 
