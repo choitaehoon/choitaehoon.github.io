@@ -36,7 +36,8 @@ date: 2021-01-09 14:03:00
 Config 서버에 의존하는 Application이 많다면 모든 Application을 API 호출해줘야 하기 때문에
 유지보수가 까다로워 집니다.
 
-이러한 문제점을 해결하고자 Spring Cloud에서는 `Spring Cloud Bus`를 제공합니다.
+이러한 문제점을 해결하고자 Spring Cloud에서는 `Spring Cloud Bus`를 제공하여 `Spring Cloud Config`와 함께
+사용합니다.
 
 ### Spring Cloud Bus 
 ing..
