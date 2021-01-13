@@ -41,6 +41,22 @@ Config 서버에 의존하는 Application이 많다면 모든 Application을 API
 
 ### Spring Cloud Netflix
 
+`Spring Cloud Netflix`는 Spring Boot앱에 대한 Netflix OSS 통합을 제공하고 
+`Service Discovery (Eureka), Circuit Breaker (Hystrix), Intelligent Routing (Zuul), Client Side Load Balancing (Ribbon),
+Archaius (External Configuration)` 으로 대규모 분산 시스템을 구축할 수 있습니다.
+
+저의 관심사는 `Archaius`이기 때문에 이 모듈을 중점적으로 살펴보겠습니다
+
+![Spring Cloud Netflix](https://user-images.githubusercontent.com/33123391/104430560-2bb57880-55ca-11eb-8f79-8b2ac8d2761d.png)
+
+`Spring Cloud Netflix`의 `Archaius`는 설정 값들을 외부 환경으로 분리할 수 있고 하나 이상의 Configuration
+ Source를 지원합니다(JDBC, REST, .properties 등). 또한 주기적으로 폴링 할 수 있어 따로 API를 호출하지 않고
+ 바뀐 설정값들을 읽을 수 있습니다.
+ 
+`Spring Cloud Config`와 비교해보면 설정값이 바뀌어도 API를 따로 호출해도 되지 않아도 되며 `Spring Cloud Bus`
+와 같이 시스템을 확장하지 않아도 `Archaius`는 자체적으로 해결하고 있습니다. 그렇다면 `Spring Cloud Netflix`를
+사용하는게 좋을까?
+
 ##### 유지 관리 모드로 전환
 `Spring Cloud Netflix`의 대부분의 모듈이 유지 관리 모드로 전환 되었는데 이 말은 더 이상 모듈에 
 새로운 기능을 추가 하지 않음을 의미합니다. 다른 기술들은 더 많은 기능들을 제공하기 위하여 끊임 없이 발전하지만
@@ -75,3 +91,5 @@ Spring Cloud Netflix는 기존에 있던 모듈들을 다른 기능들로 바꾸
 * https://m.mkexdev.net/414
 * https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
 * https://github.com/Netflix/Hystrix#hystrix-status
+* https://netflixtechblog.com/announcing-archaius-dynamic-properties-in-the-cloud-bc8c51faf675
+* https://github.com/Netflix/archaius/wiki/Overview
