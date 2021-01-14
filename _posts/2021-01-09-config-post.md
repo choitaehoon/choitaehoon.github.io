@@ -85,6 +85,17 @@ Spring Cloud Netflix는 기존에 있던 모듈들을 다른 기능들로 바꾸
 |Zuul|Spring Cloud Gateway|
 |Archaius|Spring Boot external config + Spring Cloud Config|
 
+### Spring Cloud Consul
+
+`Spring Cloud Consul`도 `Spring Boot`에 대한 `Consul`통합을 제공하기 때문에
+몇가지 간단한 주석으로 빠르게 활성화하고 구성 할 수 있습니다. `Consul`은 오픈소스를
+제공하고 있으며 엔터프라이즈 버전도 비용을 지불하면 더 많은 기능들을 사용할 수 있습니다
+
+ing...
+
+하지만 설정 파일을 실수로 삭제하게 되면 복원이 불가능하지만 Git2Consul을 이용해 영속화 이슈를 해결 할 수 있습니다. 하지만
+Git2Consul은 Unix에서만 테스트 되었기 때문에 다른 운영체제 환경에서는 사용하기 꺼려집니다.
+
 참고 문서
 * https://medium.com/@yongkyu.jang/spring-cloud-config-server-f1e390f18cfc
 * https://12factor.net/ko/config
@@ -93,3 +104,4 @@ Spring Cloud Netflix는 기존에 있던 모듈들을 다른 기능들로 바꾸
 * https://github.com/Netflix/Hystrix#hystrix-status
 * https://netflixtechblog.com/announcing-archaius-dynamic-properties-in-the-cloud-bc8c51faf675
 * https://github.com/Netflix/archaius/wiki/Overview
+* https://github.com/breser/git2consul
