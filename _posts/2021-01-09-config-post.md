@@ -97,8 +97,18 @@ Spring Cloud Netflix는 기존에 있던 모듈들을 다른 기능들로 바꾸
 `Spring Cloud Config`와 마찬 가지로 외부 환경에서 설정값들을 따로 관리할 수 있는 장점이 있습니다.
 또한 `Service Discovery`, `Health Checking`, `Multi Datacenter`를 지원해줍니다
 
-하지만 설정 파일을 실수로 삭제하게 되면 복원이 불가능하지만 Git2Consul을 이용해 영속화 이슈를 해결 할 수 있습니다.
-Git2Consul은 Unix에서만 테스트 되었기 때문에 다른 운영체제 환경에서는 사용하기 꺼려집니다.
+`Consul`은 설정 파일을 실수로 삭제하게 되면 복원이 불가능하지만 Git2Consul을 이용해 영속화 이슈를 해결 할 수 있습니다.
+Git2Consul은 Unix에서만 테스트 되었기 때문에 다른 운영체제 환경에서는 정상적으로 작동하는지 파악하기 어려우며
+별도의 플러그인을 설치해야 합니다
+
+##### 그렇다면 `Spring Cloud Config`와 `Spring Cloud Consul` 어떤 거를 사용해야 좋을까?
+이 두 기능은 모두 Load Balancing, Api GateWay, Health Checking을 지원해주고
+Spring Boot와 통합하기가 편리합니다. 하지만 영속화로 바라볼 때 Spring Cloud Config는
+git으로 관리하여 영속화하기 쉽지만 Spring Cloud Consul은 설정 파일을 실수로 삭제하게 되면 복원이
+불가능하여 Git2Consul을 사용하여 영속화 문제를 해결했지만 Git2Consul은 유닉스에만 테스트되었기 때문에 다른 운영체제에서
+정상적으로 작동하는지 파악하기가 어려운 단점이 있습니다. 또한 `Spring Cloud Config`에는 별도의 플러그인
+을 설치하지 않아도 되지만 `Spring Cloud Consul`은 별도의 플러그인을 설치해야하기 때문에 
+`Spring Cloud Config`를 선택했습니다.
 
 참고 문서
 * https://medium.com/@yongkyu.jang/spring-cloud-config-server-f1e390f18cfc
