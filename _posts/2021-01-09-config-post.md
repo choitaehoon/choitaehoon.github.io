@@ -87,13 +87,17 @@ Spring Cloud Netflix는 기존에 있던 모듈들을 다른 기능들로 바꾸
 
 ### Spring Cloud Consul
 
-`Spring Cloud Consul`도 `Spring Boot`에 대한 `Consul`통합을 제공하기 때문에
+`Spring Cloud Consul`은 `Spring Boot`에 대한 `Consul`통합을 제공하기 때문에
 몇가지 간단한 주석으로 빠르게 활성화하고 구성 할 수 있습니다. `Consul`은 오픈소스를
-제공하고 있으며 엔터프라이즈 버전도 비용을 지불하면 더 많은 기능들을 사용할 수 있습니다
+제공하고 있으며 엔터프라이즈 버전에 대한 비용을 지불하면 더 많은 기능들을 사용할 수 있습니다
 
-ing...
+![Spring Cloud Consul](https://user-images.githubusercontent.com/33123391/104689312-a48d0f80-5745-11eb-9f1a-43de240534b6.png)
 
-하지만 설정 파일을 실수로 삭제하게 되면 복원이 불가능하지만 Git2Consul을 이용해 영속화 이슈를 해결 할 수 있습니다. 하지만
+위의 그림과 같이 `Consul`은 웹 UI를 이용하여 설정값들을 편리하게 설정할 수 있고 
+`Spring Cloud Config`와 마찬 가지로 외부 환경에서 설정값들을 따로 관리할 수 있는 장점이 있습니다.
+또한 `Service Discovery`, `Health Checking`, `Multi Datacenter`를 지원해줍니다
+
+하지만 설정 파일을 실수로 삭제하게 되면 복원이 불가능하지만 Git2Consul을 이용해 영속화 이슈를 해결 할 수 있습니다.
 Git2Consul은 Unix에서만 테스트 되었기 때문에 다른 운영체제 환경에서는 사용하기 꺼려집니다.
 
 참고 문서
